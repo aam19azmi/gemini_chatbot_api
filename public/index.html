@@ -8,11 +8,21 @@
 </head>
 <body>
   <div class="chat-container">
-    <h1>Gemini AI Chatbot</h1>
+    <div class="chat-header">
+        <h1>Gemini AI Chatbot</h1>
+        <p>Your friendly AI-powered assistant</p>
+    </div>
     <div id="chat-box"></div>
+    <div id="loader-container" style="display: none;">
+        <div class="loader"></div>
+    </div>
+    <div id="error-container" style="display: none;">
+        <p class="error-message"></p>
+        <button id="copy-error-btn">Copy Error</button>
+    </div>
     <form id="chat-form">
       <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" required />
-      <button type="submit">Send</button>
+      <button type="submit" title="Send Message">Send</button>
     </form>
   </div>
   <script src="script.js"></script>
